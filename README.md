@@ -144,10 +144,11 @@ results/full_final_analysis/ Plots and paired comparisons from that run
 report/                  Literature review, methods, results, limitations, SOP and interview guides
 ```
 
-## Before using this in a PhD SOP
+## Limitations and Future Work
 
-1. Read `report/literature_review.md` and the referenced papers.
-2. Explain that the current benchmark is synthetic; do not call it an LLM experiment.
-3. Inspect `report/experimental_results.md` and the raw CSVs rather than quoting the README alone.
-4. Do not claim novelty or superiority without a literature-supported difference and appropriate validation.
-5. A stronger next study would connect the simulator to real LLM-agent traces or tasks and evaluate validators that do not have access to clean reference outputs.
+This project currently uses a synthetic workflow simulator to study how different recovery strategies behave when task failures or corrupted outputs occur. Although the simulator makes it possible to control experimental conditions and compare policies reproducibly, it does not capture all the challenges of real LLM-based multi-agent systems.
+
+An important direction for future work is to evaluate these recovery strategies on workflows involving actual LLM agents. This would allow the study to examine realistic execution failures, imperfect output validation, and the trade-off between recovery cost and task reliability. Another challenge is to develop validation mechanisms that can identify incorrect outputs without relying on access to a known correct answer.
+
+These extensions would help determine whether the observations from the current simulation generalize to practical agentic workflows.
+
