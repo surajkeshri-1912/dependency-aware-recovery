@@ -1,0 +1,12 @@
+topologies: [linear, branching, parallel_merge]
+workflow_sizes: [6]
+seeds: [11, 12, 13, 14, 15]
+failure_probabilities: [0.08]
+detection_coverages: [0.5, 1.0]
+audit_sensitivities: [1.0]
+audit_false_positive_rates: [0.0]
+failure_kinds: [transient, corruption]
+max_occurrences: 1
+max_retries: 2
+validation_enabled: true
+strategies: [none, full_restart, failed_task_retry, dependency_aware]

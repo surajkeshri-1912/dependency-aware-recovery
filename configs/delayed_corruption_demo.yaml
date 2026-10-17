@@ -1,0 +1,14 @@
+# Diagnostic, single-seed demo: hidden root corruption propagates through a linear DAG.
+topologies: [linear]
+workflow_sizes: [6]
+seeds: [41]
+failure_probabilities: [1.0]
+detection_coverages: [0.0]
+audit_sensitivities: [1.0]
+audit_false_positive_rates: [0.0]
+failure_kinds: [corruption]
+failure_task_ids: [T00]
+max_occurrences: 1
+max_retries: 2
+validation_enabled: true
+strategies: [none, full_restart, failed_task_retry, dependency_aware]

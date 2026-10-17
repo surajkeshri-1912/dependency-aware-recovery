@@ -1,0 +1,14 @@
+# Persistent visible failure at an internal node; recovery should exhaust its budget.
+topologies: [branching]
+workflow_sizes: [7]
+seeds: [71, 72, 73]
+failure_probabilities: [1.0]
+detection_coverages: [1.0]
+audit_sensitivities: [1.0]
+audit_false_positive_rates: [0.0]
+failure_kinds: [persistent]
+failure_task_ids: [T02]
+max_occurrences: 1  # ignored for persistent failures by design
+max_retries: 2
+validation_enabled: true
+strategies: [none, full_restart, failed_task_retry, dependency_aware]

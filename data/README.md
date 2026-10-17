@@ -1,0 +1,1 @@
+No external dataset is required for the core simulator. Tasks and failure scenarios are generated from configuration. If real task datasets are added later, document provenance, licensing, and preprocessing here.

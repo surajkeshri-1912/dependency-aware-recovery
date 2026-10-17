@@ -1,0 +1,14 @@
+topologies: [linear]
+workflow_sizes: [10]
+seeds: [301, 302, 303, 304, 305, 306, 307, 308, 309, 310,
+        311, 312, 313, 314, 315, 316, 317, 318, 319, 320,
+        321, 322, 323, 324, 325, 326, 327, 328, 329, 330]
+failure_probabilities: [0.25]
+detection_coverages: [0.5, 1.0]
+audit_sensitivities: [0.5, 1.0]
+audit_false_positive_rates: [0.0]
+failure_kinds: [corruption]
+max_occurrences: 1
+max_retries: 2
+validation_enabled: true
+strategies: [failed_task_retry, dependency_aware]
